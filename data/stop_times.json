@@ -1,0 +1,19 @@
+[
+  { "trip_id": "T1", "stop_id": "S1", "stop_sequence": 1, "departure_time": 28800 },
+  { "trip_id": "T1", "stop_id": "S2", "stop_sequence": 2, "departure_time": 29400 },
+  { "trip_id": "T1", "stop_id": "S3", "stop_sequence": 3, "departure_time": 30300 },
+  { "trip_id": "T1", "stop_id": "S4", "stop_sequence": 4, "departure_time": 31500 },
+
+  { "trip_id": "T2", "stop_id": "S1", "stop_sequence": 1, "departure_time": 61200 },
+  { "trip_id": "T2", "stop_id": "S2", "stop_sequence": 2, "departure_time": 61800 },
+  { "trip_id": "T2", "stop_id": "S3", "stop_sequence": 3, "departure_time": 62700 },
+  { "trip_id": "T2", "stop_id": "S4", "stop_sequence": 4, "departure_time": 63900 },
+
+  { "trip_id": "T3", "stop_id": "S1", "stop_sequence": 1, "departure_time": 29100 },
+  { "trip_id": "T3", "stop_id": "S5", "stop_sequence": 2, "departure_time": 30000 },
+  { "trip_id": "T3", "stop_id": "S6", "stop_sequence": 3, "departure_time": 30900 },
+
+  { "trip_id": "T4", "stop_id": "S1", "stop_sequence": 1, "departure_time": 61500 },
+  { "trip_id": "T4", "stop_id": "S5", "stop_sequence": 2, "departure_time": 62400 },
+  { "trip_id": "T4", "stop_id": "S6", "stop_sequence": 3, "departure_time": 63300 }
+]

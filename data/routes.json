@@ -1,0 +1,4 @@
+[
+  { "route_id": "R1", "route_short_name": "Blue Line", "route_long_name": "Downtown - Airport", "route_type": 1 },
+  { "route_id": "R2", "route_short_name": "Green Line", "route_long_name": "Downtown - Uptown", "route_type": 1 }
+]

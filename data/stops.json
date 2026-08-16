@@ -1,0 +1,8 @@
+[
+  { "stop_id": "S1", "stop_name": "Downtown", "stop_lat": 40.7128, "stop_lon": -74.0060 },
+  { "stop_id": "S2", "stop_name": "Central Station", "stop_lat": 40.7178, "stop_lon": -74.0000 },
+  { "stop_id": "S3", "stop_name": "University", "stop_lat": 40.7300, "stop_lon": -73.9950 },
+  { "stop_id": "S4", "stop_name": "Airport", "stop_lat": 40.7500, "stop_lon": -73.9800 },
+  { "stop_id": "S5", "stop_name": "Riverside", "stop_lat": 40.7050, "stop_lon": -74.0150 },
+  { "stop_id": "S6", "stop_name": "Uptown", "stop_lat": 40.7400, "stop_lon": -74.0200 }
+]

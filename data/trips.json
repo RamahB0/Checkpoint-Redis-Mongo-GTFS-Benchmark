@@ -1,0 +1,6 @@
+[
+  { "trip_id": "T1", "route_id": "R1", "trip_headsign": "Airport via Central Station (AM)" },
+  { "trip_id": "T2", "route_id": "R1", "trip_headsign": "Airport via Central Station (PM)" },
+  { "trip_id": "T3", "route_id": "R2", "trip_headsign": "Uptown via Riverside (AM)" },
+  { "trip_id": "T4", "route_id": "R2", "trip_headsign": "Uptown via Riverside (PM)" }
+]
