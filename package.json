@@ -1,0 +1,16 @@
+{
+  "name": "redis-mongo-gtfs-benchmark",
+  "version": "1.0.0",
+  "description": "Checkpoint: Application-Based Benchmarking on Redis and MongoDB for Trip Planning using GTFS Data. Compares Redis and MongoDB for storing/querying GTFS transit data, with a runnable benchmark and a verified in-app demo.",
+  "main": "src/benchmark.js",
+  "scripts": {
+    "demo": "node demo/run-demo.js > output.txt",
+    "demo:console": "node demo/run-demo.js",
+    "start:real": "node scripts/run-real.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ioredis": "^5.4.1",
+    "mongoose": "^8.5.0"
+  }
+}

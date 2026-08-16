@@ -1,0 +1,34 @@
+
+=== Ingesting sample GTFS data ===
+MongoDB store: ingested 14 stop_times rows
+Redis store:   ingested 14 stop_times rows
+
+=== Correctness check: MongoDB store vs Redis store agree ===
+getStopsForRoute("R1") -> Downtown, Central Station, University, Airport
+getNextDeparture("S1", 29000) -> trip T3 at 29100s (both stores agree)
+getTripDetails("T1") -> Downtown@28800 -> Central Station@29400 -> University@30300 -> Airport@31500
+getNextDeparture("S4", 99999) -> null in both stores (no departures left)
+
+All correctness assertions passed.
+
+=== Running timing benchmark ===
+=== Ingestion ===
+MongoDB ingestGtfs: 0.031 ms (14 rows)
+Redis ingestGtfs: 0.173 ms (14 rows)
+
+=== Query benchmarks (avg over 500 iterations) ===
+getStopsForRoute("R1")
+  MongoDB: 0.0193 ms/op (total 9.647 ms)
+  Redis:   0.0031 ms/op (total 1.545 ms)
+  Faster in this run: Redis
+getNextDeparture("S1", 29000)
+  MongoDB: 0.0083 ms/op (total 4.152 ms)
+  Redis:   0.0072 ms/op (total 3.622 ms)
+  Faster in this run: Redis
+getTripDetails("T1")
+  MongoDB: 0.0039 ms/op (total 1.931 ms)
+  Redis:   0.0089 ms/op (total 4.446 ms)
+  Faster in this run: MongoDB
+
+=== Done ===
+In production, these same src/mongoStore.js and src/redisStore.js modules connect to a real MongoDB Atlas cluster and a real Redis instance via connectMongo(MONGODB_URI) / connectRedis(REDIS_URL) - see README.md.
